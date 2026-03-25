@@ -52,7 +52,7 @@ console.log(array2)
 //flat does not change original array. it returns new array useful when working with nested data.
 
 //Data scripting using this method
-console.log(Array.isArray("Priyanka"))//check the given is array or not.we can not use string as an array so it becomes flase.
+console.log(Array.isArray("Pratiksha"))//check the given is array or not.we can not use string as an array so it becomes flase.
 
 console.log(Array.isArray(numbers));//numbers is an array
 
