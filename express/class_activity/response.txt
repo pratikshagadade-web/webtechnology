@@ -1,0 +1,16 @@
+
+
+response method:
+respense.send-send data
+response.jason-send in jason form
+response.status= check http status
+response.sendfile = sending files
+
+
+logic for exp.5:
+app.get('/),(req,res=>{
+    const T=new Date();
+    response.jason({
+        message
+    })
+})

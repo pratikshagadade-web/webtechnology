@@ -1,0 +1,10 @@
+MIDDLEWARE in Express.
+
+
+-middleware is a function that execute during the request before sending the finale response.
+-they have excess to :1 resquest
+                      2.response
+                      3.next
+-syntax                      
+function name
+
