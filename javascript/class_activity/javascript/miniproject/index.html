@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Registration</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background-color: #5dbaf3;
+    }
+
+    input, button {
+      padding: 6px;
+      margin: 5px;
+    }
+
+    .course-box {
+      background: rgb(229, 233, 8);
+      margin: 10px auto;
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgb(14, 10, 10);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Add Course</h2>
+  <input type="text" id="courseName" placeholder="Enter Course Name">
+  <button id="addCourseBtn">Add Course</button>
+
+  <h2>Available Courses</h2>
+  <div id="courseList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
