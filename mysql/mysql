@@ -1,0 +1,52 @@
+
+sql: selected query langange
+my sql is used to communicate with relational database.
+types:
+1.mysql 
+2.postrage sql
+3. mysql server
+
+//activity//
+imp command
+create ,
+insert data, 
+update table
+delete,
+select
+   
+  1. create table student;
+  2.insert into student(name varchar,) 
+  update
+
+
+what is orl-object relational mapping:
+insted of writin g the sql query we use java script object 
+with orl -> findall
+  //web socket
+  it allows us the real time communication 
+  1.http->client resquest ,response
+  web sokecktr->
+
+  exmaple-whatsapp,notification,gaming apps
+  so we install web socket
+  --np install ws
+
+  //activity
+  1.deep study web socket
+  2.understand web socket  with example.
+  What is WebSocket?
+
+A WebSocket is a communication protocol that provides:
+
+👉 Full-duplex communication (both client & server can send data anytime)
+👉 Over a single persistent connection
+
+Client sends HTTP request
+Server upgrades it to WebSocket
+Connection stays open
+Both can send messages anytime
+
+example:WhatsApp chat 💬
+Online gaming 🎮
+Live stock market 📈
+Notifications 🔔
