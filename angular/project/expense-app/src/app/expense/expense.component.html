@@ -1,0 +1,35 @@
+<div class="container">
+  <h2>💰 Expense Tracker</h2>
+
+  <div class="form">
+    <input [(ngModel)]="title" placeholder="Expense name">
+
+    <input [(ngModel)]="amount" type="number" placeholder="Amount">
+
+    <input [(ngModel)]="date" type="date">
+
+    <select [(ngModel)]="category">
+      <option value="">Select Category</option>
+      <option>Food</option>
+      <option>Travel</option>
+      <option>maintanance</option>
+      <option>Shopping</option>
+    </select>
+
+    <button (click)="addExpense()">Add Expense</button>
+  </div>
+
+  <h3>Total: ₹{{ total }}</h3>
+
+  <ul>
+    <li *ngFor="let exp of expenses; let i = index">
+      <span>
+        {{ exp.title }} - ₹{{ exp.amount }} 
+        <small>({{ exp.category }})</small>
+        <br>
+        <small>Date: {{ exp.date }}</small>
+      </span>
+      <button class="delete" (click)="deleteExpense(i)">Delete</button>
+    </li>
+  </ul>
+</div>

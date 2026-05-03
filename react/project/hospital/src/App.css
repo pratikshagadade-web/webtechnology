@@ -1,0 +1,216 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* Container */
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* 🔥 Premium Animated Title */
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+
+  background: linear-gradient(90deg, #6366f1, #ec4899, #6366f1);
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Glow underline */
+h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  margin: 10px auto 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #6366f1, #ec4899);
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.6);
+}
+
+/* Section heading */
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+/* Doctor list */
+.doctor-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 🧾 Doctor card */
+.doctor-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+
+  width: 380px;
+  padding: 22px;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: left;
+
+  transition: all 0.25s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Doctor name */
+.doctor-card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Specialty */
+.doctor-card p {
+  font-size: 14px;
+  color: #6366f1;
+  margin-bottom: 12px;
+}
+
+/* Slots */
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 🔘 Buttons */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.4);
+}
+
+/* Appointments section */
+.appointments-section {
+  margin-top: 50px;
+}
+
+/* Appointment card */
+.appointment-box {
+  background: white;
+  width: 380px;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 10px;
+
+  box-shadow: 0 8px 18px rgba(0,0,0,0.07);
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.appointment-box:hover {
+  transform: scale(1.02);
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal */
+.modal {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  width: 360px;
+  position: relative;
+
+  animation: fadeIn 0.3s ease;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background: crimson;
+  border-radius: 50%;
+  padding: 6px 10px;
+}
+
+/* Booking */
+.booking-box {
+  text-align: center;
+}
+
+/* Input */
+input {
+  padding: 10px;
+  margin-right: 8px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+
+  outline: none;
+}
+
+input:focus {
+  border-color: #6366f1;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

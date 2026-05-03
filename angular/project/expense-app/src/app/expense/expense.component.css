@@ -1,0 +1,66 @@
+.container {
+  width: 400px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background: green;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkgreen;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.delete {
+  background: red;
+}
+
+.delete:hover {
+  background: darkred;
+}
+
+h3 {
+  text-align: center;
+}
